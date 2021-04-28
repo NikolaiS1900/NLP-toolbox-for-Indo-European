@@ -3,4 +3,4 @@ Most of my descriptions are ment to work with Danish, nordic dialects and Old No
 However, each script will come with documentation in both Danish and English.
 
 
-sort.py - This script takes each word, remove all duplicates, and lists every word in alphabetic order in a seperated text file.
+sort.py - This script takes each word, remove all duplicates, and lists every word in alphabetic order in a separated text file.
