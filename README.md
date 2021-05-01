@@ -7,4 +7,4 @@ sort.py - This script takes each word, remove all duplicates, and lists every wo
 
 tegnliste.py - This script give you an overview of what characters you have in your text.
 
-Udtrækker.py - The purpose of this script is to extract certain grammatical endings and sound patterns in words.
+udtrækker.py - The purpose of this script is to extract certain grammatical endings and sound patterns in words.
