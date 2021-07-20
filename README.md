@@ -10,9 +10,7 @@ udtrækker.py - The purpose of this script is to extract certain grammatical end
 
 sort.py - This script takes each word, remove all duplicates, and lists every word in alphabetic order in a separated text file.
 
-<p></p>
-<p></p>
-<p></p>
+<br>
 
 <b>Install Python on windows:</b> https://www.youtube.com/watch?v=uDbDIhR76H4
 
