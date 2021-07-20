@@ -19,6 +19,6 @@ Install Python on Linux: https://www.youtube.com/watch?v=Br2xt6B57SA
 
 Install Python on UNIX(BSD): 
 open terminal and write:
-  sudo pkg install python3
+  <i>sudo pkg install python3</i>
 and then:
   sudo pkg install pip
