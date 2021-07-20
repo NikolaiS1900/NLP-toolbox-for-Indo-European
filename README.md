@@ -11,14 +11,14 @@ udtrækker.py - The purpose of this script is to extract certain grammatical end
 sort.py - This script takes each word, remove all duplicates, and lists every word in alphabetic order in a separated text file.
 
 
-Install Python on windows: https://www.youtube.com/watch?v=uDbDIhR76H4
+<b>Install Python on windows:</b> https://www.youtube.com/watch?v=uDbDIhR76H4
 
-Install Python on MacOS: https://www.youtube.com/watch?v=TgA4ObrowRg
+<b>Install Python on MacOS:</b> https://www.youtube.com/watch?v=TgA4ObrowRg
 
-Install Python on Linux: https://www.youtube.com/watch?v=Br2xt6B57SA
+<b>Install Python on Linux:</b> https://www.youtube.com/watch?v=Br2xt6B57SA
 
-<b>Install Python on UNIX(BSD):</b> 
-open terminal and write:<p></p>
+<b>Install Python on UNIX(BSD):</b>
+open terminal and write
   <i>sudo pkg install python3</i>
-and then:<p></p>
+and then:
   <i>sudo pkg install pip</i>
