@@ -1,8 +1,8 @@
 # Consonants
-pl = '[pPbBtTdDkKgG]' #plosives
+pl = '[pPbBtTdDkKgGcC]' #plosives
 na = '[mMnN]' #nasales
 tr = '[rR]' #trills
-fr = '[fFvVsSzZ]' #fricatives
+fr = '[fFvVsSzZcC]' #fricatives
 ap = '[jJwW]' #approximants
 la = '[lL]' #laterals
 bl = '[pPbBmMwW]' #bilabials
