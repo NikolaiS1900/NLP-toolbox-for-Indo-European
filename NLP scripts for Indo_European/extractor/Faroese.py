@@ -1,11 +1,11 @@
 # Consonants
-pl = '[pPbBtTdDkKgG]' #plosives
+pl = '[pPbBtTdDkKgGcC]' #plosives
 na = '[mMnN]' #nasales
 tr = '[rR]' #trills
-fr = '[fFvVðÐsSzZ]' #fricatives
+fr = '[fFvVðÐsSzZcC]' #fricatives
 ap = '[jJwW]' #approximants
 la = '[lL]' #laterals
-bl = '[pPbBmM]' #bilabials
+bl = '[pPbBmMwW]' #bilabials
 ld = '[fFvV]' #labiodentals
 dt = '[tTdDdÐ]' #dentals
 al = '[nNrRsSzZlL]' #alveolars and postalveolars
