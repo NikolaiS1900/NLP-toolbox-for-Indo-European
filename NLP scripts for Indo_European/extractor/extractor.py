@@ -1,19 +1,24 @@
 import glob, os, re
 from path_finder import path_finder
 
-# Uncomment to activate. You can only activate one at the time.
-from Proto_Germanic import Sounds
+## Uncomment to activate. You can only activate one at the time.
+# from Albanian import Sounds
+# from Proto_Germanic import Sounds
+from Danish_Norwegian_Swedish import Sounds
 
 CWD = os.getcwd()
 PATH = path_finder()
 
-for filename in glob.glob(PATH+'/sort/Result/*.txt'):
-	with open(filename, 'r', encoding="utf8") as f:
-		read_tekst = f.read()
 
-print('''Tast 1 for søgning i forlyd.
+for filename in glob.glob(PATH+'/sort/Result/*.txt'):
+    with open(filename, 'r', encoding="utf8") as f:
+        read_tekst = f.read()
+
+
+print('''
+Tast 1 for søgning i forlyd (absolut forlyd).
 Tast 2 for søgning i indlyd.
-Tast 3 for søgning i udlyd.
+Tast 3 for søgning i udlyd (absolut udlyd).
 
 Søgningen vil finde alle ord der opfylder dine søgekriterier, og gemme disse ord i en seperat tekstfil.
 ''')
@@ -34,40 +39,86 @@ def start():
 
 
 def forlyd():
-    indput = input("hvilken forlyd vil du søge på?: ")
-    if indput == "RegEx":
-        pattern = Sounds()+"\w*"
-    else:
-        pattern = indput+"\w*"
-    result = re.findall(pattern, read_tekst, re.IGNORECASE)
-    read_tekst_list = read_tekst.split()
+    print("""
+Her kan du søge på i absolut forlyd. Du har nu følgende valg; indtaster du:
 
-    Result = []
-    for a in result:
-        for b in read_tekst_list:
-            if a == b:
-                Result.append(a)
+1     Frisøgning
+2     Frisøgning + Lydgruppe
+3     Lydgruppe + Frisøgning
+
+Ved både 2 og 3 kan du vælge at ikke indtaste noget sælg, bare vælge en lydgruppe.
+""")
+
+    indput = input("\nIndtast dit valg: ")
+    if indput == "1":
+        indput = input("\nSkriv dit ord med eller uden regular expression: ")
+        pattern = r"\b"+indput+r"\w*"
+    elif indput == "2":
+        indput = input("Skriv dit ord med eller uden regular expression: ")
+        pattern = r"\b"+indput+Sounds()+r"\w*"
+    elif indput == "3":
+        indput = input("Skriv dit ord med eller uden regular expression: ")
+        pattern = r"\b"+Sounds()+indput+r"\w*"
+    else:
+        exit(0)
+
+    result = re.findall(pattern, read_tekst, re.IGNORECASE)
     navn = "forlyd"
-    make_file(Result, navn)
+    make_file(result, navn)
 
 
 def indlyd():
-    indput = input("hvilken indlyd vil du søge på: ")
-    if indput == "RegEx":
-        pattern = "\w+"+Sounds()+"\w+"
+    print("""
+Her kan du søge på i indlyd. Du har nu følgende valg; indtaster du:
+
+1     Frisøgning
+2     Frisøgning + Lydgruppe
+3     Lydgruppe + Frisøgning
+
+Ved både 2 og 3 kan du vælge at ikke indtaste noget sælg, bare vælge en lydgruppe.
+""")
+
+    indput = input("\nIndtast dit valg: ")
+    if indput == "1":
+        indput = input("\nSkriv dit ord med eller uden regular expression: ")
+        pattern = r"\w+"+indput+r"\w+"
+    elif indput == "2":
+        indput = input("Skriv dit ord med eller uden regular expression: ")
+        pattern = r"\w+"+indput+Sounds()+r"\w+"
+    elif indput == "3":
+        indput = input("Skriv dit ord med eller uden regular expression: ")
+        pattern = r"\w+"+Sounds()+indput+r"\w+"
     else:
-        pattern = "\w+"+indput+"\w+"
+        exit(0)
     result = re.findall(pattern, read_tekst, re.IGNORECASE)
     navn = "indlyd"
     make_file(result, navn)
 
 
 def udlyd():
-    indput = input("hvilken indlyd vil du søge på: ")
-    if indput == "RegEx":
-        pattern = "\w*"+Sounds()
+    print("""
+Her kan du søge på i absolut udlyd. Du har nu følgende valg; indtaster du:
+
+1     Frisøgning
+2     Frisøgning + Lydgruppe
+3     Lydgruppe + Frisøgning
+
+Ved både 2 og 3 kan du vælge at ikke indtaste noget sælg, bare vælge en lydgruppe.
+""")
+
+    indput = input("\nIndtast dit valg: ")
+    if indput == "1":
+        indput = input("\nSkriv dit ord med eller uden regular expression: ")
+        pattern = r"\w*"+indput
+    elif indput == "2":
+        indput = input("Skriv dit ord med eller uden regular expression: ")
+        pattern = r"\w*"+indput+Sounds()
+    elif indput == "3":
+        indput = input("Skriv dit ord med eller uden regular expression: ")
+        pattern = r"\w*"+Sounds()+indput
     else:
-        pattern = "\w*"+indput
+        exit(0)
+    
     result = re.findall(pattern, read_tekst, re.IGNORECASE)
     navn = "udlyd"
     make_file(result, navn)
@@ -75,7 +126,7 @@ def udlyd():
 def make_file(result, navn):
     set_tekst = set(result)
     sorted_tekst = sorted(set_tekst, key=str.lower)
-    nice_list = '\n \n'.join(sorted_tekst)
+    nice_list = '\n\n'.join(sorted_tekst)
     ordliste = open(CWD+'/Result/'+navn+'_ordliste.txt', 'w', encoding='UTF8')
     ordliste.write("" + nice_list)
     ordliste.close()
