@@ -23,6 +23,4 @@ word2vec.py - It takes the preprocessed text, and gives you the vector represena
 
 <b>Other Scripts</b>
 
-path_finder.py - This is a script I wrote to import into other scripts. It simply helps the other python scripts to find out where it is on the computer and where other scripts and text files are located.
-
-Import other scripts, will generate a directory called <i>__pycache__</i> which you can just ignore.
+path_finder.py - This is a script I wrote to import into other scripts. It simply helps the other python scripts to find out where it is on the computer and where other scripts and text files are located. It will generate a directory called <i>__pycache__</i> which you can just ignore.
