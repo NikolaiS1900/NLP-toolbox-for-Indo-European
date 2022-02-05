@@ -1,8 +1,8 @@
 import glob, os
-from path_finder import path_finder
 
 CWD = os.getcwd()
-PATH = path_finder()
+# Går i overmappen.
+PATH = os.path.dirname(CWD) 
 
 for filename in glob.glob(PATH+'/preprocess/preprocessed_text/*.txt'):
 	with open(filename, 'r', encoding="utf8") as f:
@@ -14,7 +14,7 @@ SET_TEXT = set(SPLIT_TEXT)
 
 SORTED_TEXT = sorted(SET_TEXT, key=str.lower)
 
-TEXT = '\n \n'.join(SORTED_TEXT)
+TEXT = '\n\n'.join(SORTED_TEXT)
 
 ORDLISTE = open(CWD+'/Result/word_list.txt', 'w', encoding="utf8")
 
