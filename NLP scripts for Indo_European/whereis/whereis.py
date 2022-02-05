@@ -15,6 +15,8 @@ EXAMPLES = []
 # List all the files in PATH_PRE_PROC_TXT
 FILE_LIST = os.listdir(PATH_PRE_PROC_TXT)
 
+# Write your search word here.
+# Remember the quotation marks
 WORD = "bonde"
 
 
@@ -68,3 +70,15 @@ EXAMPLES = open(f'{CWD}/Result/{WORD}_examples.txt', 'w', encoding='utf8')
 EXAMPLES.write('' +  NICE_LIST)
 # Closes the text file neatly in order to avoid data corruption.
 EXAMPLES.close()
+
+print(f"""
+whereis.py     done running:
+
+{WORD}_examples.txt is ready in the Result directory.
+
+Visit my GitHub at: https://github.com/NikolaiS1900
+I can be contacted via: sandbecks_github@protonmail.com
+
+Kind regards
+- Nikolai Sandbeck
+""")
