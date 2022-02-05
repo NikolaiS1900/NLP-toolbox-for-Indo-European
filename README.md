@@ -20,8 +20,3 @@ sound_combi_counter.py - This script can count sound pairs of two, three, four a
 whereis.py - This script let you type in a word, it does not matter if you use big or small letters, it will find both "Cat" and "cat" if that occurs in the preprocessed text. It will tell you at what line number you can find your word in the text file.
 
 word2vec.py - It takes the preprocessed text, and gives you the vector represenation of chosen words. Vectors shows how similar or different the use of different words are. Hear more here: https://www.youtube.com/watch?v=gQddtTdmG_8&t=66s
-
-
-<b>Other Scripts</b>
-
-path_finder.py - This is a script I wrote to import into other scripts. It simply helps the other python scripts to find out where it is on the computer and where other scripts and text files are located. It will generate a directory called <i>__pycache__</i> which you can just ignore.
