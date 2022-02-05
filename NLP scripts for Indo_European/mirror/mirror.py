@@ -1,8 +1,8 @@
 import glob, os
-from path_finder import path_finder
 
 CWD = os.getcwd()
-PATH = path_finder()
+# Går i overmappen.
+PATH = os.path.dirname(CWD) 
 
 # Indlæser ordlisten dannet af sort.py
 for filename in glob.glob(PATH+'/sort/Result/*.txt'):
