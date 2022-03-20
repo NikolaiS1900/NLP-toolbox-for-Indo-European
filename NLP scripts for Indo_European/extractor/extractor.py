@@ -1,15 +1,15 @@
 import glob, os, re
 
 ## Uncomment to activate. You can only activate one at the time. (Uncomment = remove hash tag)
-#import lang_pack.Albanian
-#import lang_pack.Danish_Norwegian_Swedish
-#import lang_pack.Faroese
-#import lang_pack.Icelandic
-#import lang_pack.Latin
-#import lang_pack.Proto_Germanic
-#import lang_pack.Old_Church_Slavonic
-import lang_pack.Old_Danish
-#import lang_pack.Old_Icelandic
+#from lang_pack.Albanian import Sounds
+#from lang_pack.Danish_Norwegian_Swedish import Sounds
+#from lang_pack.Faroese import Sounds
+#from lang_pack.Icelandic import Sounds
+#from lang_pack.Latin import Sounds
+#from lang_pack.Proto_Germanic import Sounds
+#from lang_pack.Old_Church_Slavonic import Sounds
+#from lang_pack.Old_Danish import Sounds
+#from lang_pack.Old_Icelandic import Sounds
 
 CWD = os.getcwd()
 # Går i overmappen.
