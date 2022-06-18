@@ -8,7 +8,7 @@ import glob, os, re
 #from lang_pack.Latin import Sounds
 #from lang_pack.Proto_Germanic import Sounds
 #from lang_pack.Old_Church_Slavonic import Sounds
-#from lang_pack.Old_Danish import Sounds
+from lang_pack.Old_Danish import Sounds
 #from lang_pack.Old_Icelandic import Sounds
 
 CWD = os.getcwd()

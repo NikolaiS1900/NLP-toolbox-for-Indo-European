@@ -1,0 +1,34 @@
+bonden.txt
+
+	3    med den anden Bondes fede spand
+
+	1    bonden kommmer i morgen
+
+
+
+søndags_evangelierne.txt
+
+	2    bonde
+
+	1271    man .    Ok ær scriuet : tw som ære husfrue ok bonde skulæ 
+
+	2138    ok gors feter til dedzsins snaræ .         Thy at swa som bonden ger
+
+	2474    husbondens thiænæræ til hannem : o herræ myn       myn , hwat æy 
+
+	2628                gardh . - Thennæ husbonden ær alzwaldugher Guth , hwilken
+
+	2638                      Then tidh quelden kom , tha sagdhe hwsbonden , som
+
+	2651    mot hwsbonden ok sagdhe : thessæ sidherstæ æruædhæ æy 
+
+	2654    tholdæ hetæ ok æruedbæ allæn daghen .  Hwsbonden swar
+
+	2669         Thennæ hwsbonde , som sancte Gregorius sigher , ær war
+
+	2783                som godber husbonde giffwer sit thiænistæ folk fødbæ , som pro
+
+	2815    korradha mot busbonden , thy at han gaff swa meghet the som                  LXXXIII *
+
+	1    Bonde
+

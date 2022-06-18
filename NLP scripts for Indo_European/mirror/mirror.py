@@ -22,7 +22,7 @@ SORTED_TEXT = sorted(TEXT_MIRRORING_LIST, key=str.lower)
 TEXT = '\n \n'.join(SORTED_TEXT)
 
 # Danner en tekstfil ved navn spejlvendt_ordliste.
-MIRRORED_TEXT = open(CWD+'/Resultat/mirrored_word_list.txt', 'w')
+MIRRORED_TEXT = open(CWD+'/Result/mirrored_word_list.txt', 'w')
 
 # Skriver indholdet af variablen TEKST til tekstfilen.
 MIRRORED_TEXT.write("" + TEXT)
